@@ -24,17 +24,6 @@
         </a>
       </div>
     </div>
-
-    <nav class="category-nav" id="categoryNav" aria-label="Product categories">
-      <div class="category-track">
-        @foreach($navCategories as $cat)
-          <a href="{{ route('shop', ['category' => $cat->slug]) }}" class="category-item {{ request('category') === $cat->slug ? 'is-active' : '' }}">
-            <span class="cat-icon">{{ $cat->icon ?: strtoupper(substr($cat->name,0,2)) }}</span>
-            {{ $cat->name }}
-          </a>
-        @endforeach
-      </div>
-    </nav>
   </div>
 </header>
 

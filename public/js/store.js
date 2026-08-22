@@ -152,7 +152,6 @@
       document.body.classList.add('menu-open');
       document.documentElement.style.filter = 'none';
       document.body.style.filter = 'none';
-      header?.classList.add('nav-open');
     }
 
     function closeMenu() {
@@ -162,7 +161,6 @@
       drawer.setAttribute('aria-hidden', 'true');
       menuBtn?.setAttribute('aria-expanded', 'false');
       document.body.classList.remove('menu-open');
-      header?.classList.remove('nav-open');
       document.documentElement.style.filter = 'none';
       document.body.style.filter = 'none';
       overlay.hidden = true;
